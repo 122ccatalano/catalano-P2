@@ -58,7 +58,9 @@ mRequest.open("GET", "../images.json");
 mRequest.send();
 // Array holding GalleryImage objects (see below).
 var mImages = [];
+function iterate(){
 
+}
 // Holds the retrived JSON information
 var mJson;
 
