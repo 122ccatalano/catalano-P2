@@ -35,7 +35,7 @@ function animate() {
 function swapPhoto() {
 	//Add code here to access the #slideShow element.
 	//Access the img element and replace its source
-  mImages.getElementByID('photo');
+  document.getElementByID('photo').src = mImages {mCurrentIndex}.imgPath;
 	//with a new image from your images array which is loaded
 	//from the JSON string
 	console.log('swap photo');
@@ -44,6 +44,9 @@ function swapPhoto() {
 // Counter for the mImages array
 var mCurrentIndex = 0;
 
+mCurrentIndex.forEach(mCurrentIndex
+
+)
 // XMLHttpRequest variable
 var mRequest = new XMLHttpRequest();
 mRequest.addEventListener("readystatechange", () => {
@@ -59,8 +62,19 @@ mRequest.open("GET", "../images.json");
 mRequest.send();
 // Array holding GalleryImage objects (see below).
 var mImages = [];
-function iterate(){
-
+function iterateJSON(){
+  for (let i = 0; i < mImages.length; i++) {
+    text += iterateJSON.mImages[x].imgLocation[i] + "<br>";
+}
+  for (let i = 0; i < mImages.length; i++) {
+    text += iterateJSON.mImages[x].imgPath[i] + "<br>";
+}
+for (let i = 0; i < mImages.length; i++) {
+  text += iterateJSON.mImages[x].description[i] + "<br>";
+}
+for (let i = 0; i < mImages.length; i++) {
+  text += iterateJSON.mImages[x].date[i] + "<br>";
+}
 }
 // Holds the retrived JSON information
 var mJson;
