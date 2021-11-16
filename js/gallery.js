@@ -44,9 +44,6 @@ function swapPhoto() {
 // Counter for the mImages array
 var mCurrentIndex = 0;
 
-mCurrentIndex.forEach(mCurrentIndex
-
-)
 // XMLHttpRequest variable
 var mRequest = new XMLHttpRequest();
 mRequest.addEventListener("readystatechange", () => {
@@ -64,16 +61,16 @@ mRequest.send();
 var mImages = [];
 function iterateJSON(){
   for (let i = 0; i < mImages.length; i++) {
-    text += iterateJSON.mImages[x].imgLocation[i] + "<br>";
+    text += mJSON.mImages[x].imgLocation[i] + "<br>";
 }
   for (let i = 0; i < mImages.length; i++) {
-    text += iterateJSON.mImages[x].imgPath[i] + "<br>";
+    text += mJSON.mImages[x].imgPath[i] + "<br>";
 }
 for (let i = 0; i < mImages.length; i++) {
-  text += iterateJSON.mImages[x].description[i] + "<br>";
+  text += mJSON.mImages[x].description[i] + "<br>";
 }
 for (let i = 0; i < mImages.length; i++) {
-  text += iterateJSON.mImages[x].date[i] + "<br>";
+  text += mJSON.mImages[x].date[i] + "<br>";
 }
 }
 // Holds the retrived JSON information
@@ -93,10 +90,11 @@ function makeGalleryImageOnloadCallback(galleryImage) {
 }
 
 $(document).ready( function() {
-
+  fetchJSON(){
+    if iterateJSON() = mJSON;
+  }
 	// This initially hides the photos' metadata information
-	$('.details').eq(0).hide();
-
+	// $('.details').eq(0).hide();
 });
 
 window.addEventListener('load', function() {
