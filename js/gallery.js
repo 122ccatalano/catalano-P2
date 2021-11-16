@@ -35,7 +35,7 @@ function animate() {
 function swapPhoto() {
 	//Add code here to access the #slideShow element.
 	//Access the img element and replace its source
-  document.getElementById('photo').innerHTML = "Photo: " + mImages[mCurrentIndex].photo;
+  document.getElementById('photo').src = mImages[mCurrentIndex].photo;
   document.getElementsByClassName('location').innerHTML = "Location: " + mImages[mCurrentIndex].location;
   document.getElementsByClassName('description').innerHTML = "Description: " + mImages[mCurrentIndex].description;
   document.getElementsByClassName('date').innerHTML = "Date: " + mImages[mCurrentIndex].date;
@@ -51,7 +51,7 @@ var mCurrentIndex = 0;
 var mRequest = new XMLHttpRequest();
 mRequest.addEventListener("readystatechange", () => {
   if (mRequest.readyState === 4 && mRequest.status === 200){
-    const data = JSON.parse,(mRequest.responseText);
+    mJSON = JSON.parse(mRequest.responseText);
     console.log(data);
   } else if(request.readyState === 4){
     console.log('could not fetch data');
@@ -69,11 +69,11 @@ function iterateJSON(){
   for (let i = 0; i < mImages.length; i++) {
     text += mJSON.mImages[x].imgPath[i] + "<br>";
 }
-for (let i = 0; i < mImages.length; i++) {
-  text += mJSON.mImages[x].description[i] + "<br>";
+  for (let i = 0; i < mImages.length; i++) {
+    text += mJSON.mImages[x].description[i] + "<br>";
 }
-for (let i = 0; i < mImages.length; i++) {
-  text += mJSON.mImages[x].date[i] + "<br>";
+  for (let i = 0; i < mImages.length; i++) {
+    text += mJSON.mImages[x].date[i] + "<br>";
 }
 }
 // Holds the retrived JSON information
