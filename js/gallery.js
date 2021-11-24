@@ -112,6 +112,26 @@ window.addEventListener('load', function() {
 
 }, false);
 
+$(img).hasClass("moreIndicator").click(function() {
+  if ("rot90") {
+    removeClass("rot90")
+    addClass("rot270")
+  }
+  else () {
+    removeClass("rot270")
+    addClass("rot90")
+  }
+});
+
+$(div).hasClass("details").click(function() {
+  if ("rot90") {
+    slideToggle(down);
+  }
+  else () {
+    slideToggle(up);
+  }
+});
+
 function GalleryImage() {
 	//implement me as an object to hold the following data about an image:
 	//1. location where photo was taken
