@@ -54,12 +54,20 @@ body {
 	width: 42px;
 }
 
+#prevPhoto:hover {
+	opacity: 80%;
+}
+
 #nextPhoto {
 	position: absolute;
 	height: 42px;
 	width: 42px;
   top: 0px;
   right: 0px;
+}
+
+#nextPhoto:hover {
+	opacity: 80%;
 }
 
 .details p {
