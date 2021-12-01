@@ -1,31 +1,31 @@
 {
     "images": [
         {
-            "imgPath": "img/k2.jpg",
+            "imgPath": "img/extra/k2.jpg",
             "imgLocation": "Asia",
             "description": "K2: Second Highest Mountain",
             "date": "01/23/2021"
         },
         {
-            "imgPath": "img/road.jpg",
+            "imgPath": "img/extra/road.jpg",
             "imgLocation": "California",
             "description": "Pacific Coast Highway",
             "date": "02/3/2021"
         },
         {
-            "imgPath": "img/Mt.Haruna.jpg",
+            "imgPath": "img/extra/Mt.Haruna.jpg",
             "imgLocation": "Gunma",
             "description": "Mt. Haruna",
             "date": "01/23/2015"
         },
         {
-            "imgPath": "img/grimes-canyon-road.jpg",
+            "imgPath": "img/extra/grimes-canyon-road.jpg",
             "imgLocation": "California",
             "description": "Grimes Canyon",
             "date": "12/7/2020"
         },
         {
-            "imgPath": "img/pier.jpg",
+            "imgPath": "img/extra/pier.jpg",
             "imgLocation": "Canada",
             "description": "Pier View",
             "date": "02/01/2016"
